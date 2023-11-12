@@ -20,10 +20,16 @@ import ToDoList from './src/ToDoList';
 
 
 function App() {
+
+  const [tasks, setTasks] = React.useState([  'Do laundry',
+  'Go to gym',
+  'Walk dog',
+  'Make dinner',]);
+
   return (
     <SafeAreaView>
       
-      <ToDoList />
+      <ToDoList tasks={tasks} />
 
       <ToDoForm />
 
